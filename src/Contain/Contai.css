@@ -1,0 +1,21 @@
+
+.parentApi
+{
+   border: 1px solid black;
+}
+.singleApi
+{
+background-color: aquamarine;
+}
+.insideSingleAtt
+{
+   background-color: blanchedalmond;
+}
+.editImage
+{
+   height: 150px;
+}
+.rowamendd
+{
+   justify-content: space-between;
+}
