@@ -65,8 +65,8 @@ export default class Contain extends Component {
       names.map(name => {
         return (
 
-          <div className="col-4" key={name.id}>
-            <div className="card" style={{ width: "15rem" }}>
+          <div className="col-md-4 col-sm-12 p-2" key={name.id}>
+            <div className="card" style={{ width:"100%" }}>
               <img src={name.avatar} className="editImage" />
               <div className="card-body">
                 <h5 className="card-title">{name.first_name} {name.last_name}</h5>
