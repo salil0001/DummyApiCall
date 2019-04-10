@@ -26,7 +26,7 @@ export default class Contain extends Component {
         this.callApiAgain
       )
     }
-    else  {
+    else {
 
       this.setState({
         pages: page
@@ -35,7 +35,7 @@ export default class Contain extends Component {
       )
     }
 
-    console.log("hhh ",this.state.pages)
+    console.log("Pages ", this.state.pages)
   }
 
   //console.log(this.state.pages)
@@ -67,14 +67,14 @@ export default class Contain extends Component {
 
           <div className="col-4" key={name.id}>
             <div className="card" style={{ width: "15rem" }}>
-              <img src={name.avatar} className="editImage" alt="Card image cap" />
+              <img src={name.avatar} className="editImage" />
               <div className="card-body">
                 <h5 className="card-title">{name.first_name} {name.last_name}</h5>
               </div>
             </div>
           </div>
 
-        )
+          )
       })
     ) :
       (
@@ -94,7 +94,7 @@ export default class Contain extends Component {
 
         <div style={{ paddingTop: "15px" }}>
 
-          <Buttons changeApi={this.changeApi} pages={this.state.pages}/>
+          <Buttons changeApi={this.changeApi} pages={this.state.pages} />
         </div>
       </div>
     )
