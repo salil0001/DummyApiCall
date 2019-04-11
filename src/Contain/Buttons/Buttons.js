@@ -70,13 +70,15 @@ export default class Buttons extends Component {
         
         return (
             <div className="row rowamend" role="group" aria-label="First group">
+                <button onClick={() => { changeApi(1); }} type="button" className="btn btn-secondary mr-2 ">First</button>
                 <button onClick={() => {changeApi("Previous");}} type="button" disabled={this.props.pages===1 ? true:false} className="btn btn-secondary mr-2">Previous</button>
                 <button onClick={() => { changeApi(1); }} type="button" className="btn btn-secondary mr-2 ">1</button>
                 <button onClick={() => { changeApi(2); }} type="button" className="btn btn-secondary mr-2">2</button>
                 <button onClick={() => { changeApi(3);}} type="button" className="btn btn-secondary mr-2">3</button>
                 <button onClick={() => { changeApi(4); }} type="button" className="btn btn-secondary mr-2">4</button>
                 <button onClick={() => changeApi("Next")} type="button" disabled={this.props.pages===4 ? true:false} className="btn btn-secondary mr-2">Next</button>
-
+                <button onClick={() => { changeApi(4); }} type="button" disabled={this.props.pages===4 ? true:false} className="btn btn-secondary mr-2">Last</button>
+                
             </div>
         )
     }
